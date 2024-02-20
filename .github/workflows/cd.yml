@@ -1,0 +1,22 @@
+name: Continuous Deployment
+on:
+    push:
+        branches: [main]
+
+jobs:
+    deploy_job:
+        runs-on: ubuntu-latest
+        name: deploy
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+          - name: Deploy 
+            uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+            with:
+                username: ${{ secrets.DEPLOY_USERNAME }}
+                password: ${{ secrets.DEPLOY_PASSWORD }}
+                server: ${{ secrets.DEPLOY_SERVER }}
+                local_path: './src/*'
+                remote_path: ${{ secrets.DEPLOY_PATH }}
+                delete_remote_files: true
+                sftp_only: true
