@@ -231,7 +231,7 @@
 
             <section
                 id="livre"
-                class="h-screen items-center gap-12 bg-gradient-to-r from-[#77141e] to-[#8a1927] lg:grid lg:grid-cols-2 lg:bg-cover lg:bg-no-repeat">
+                class="min-h-screen items-center gap-12 bg-gradient-to-r from-[#77141e] to-[#8a1927] lg:grid lg:grid-cols-2 lg:bg-cover lg:bg-no-repeat">
                 <div class="col-start-2 row-start-1 px-5 py-6">
                     <h2 class="text-5xl uppercase">Le livre</h2>
 
@@ -259,7 +259,7 @@
                 </div>
                 {{ $img_livre_bg_2 := resources.Get "img/livre-bg-2.png" }}
                 <div
-                    class="bg-cover bg-center bg-no-repeat px-28 py-12 lg:!bg-none"
+                    class="bg-cover bg-center bg-no-repeat px-28 py-12 lg:!bg-none xl:px-40 xl:py-20"
                     style="background-image: url('{{ $img_livre_bg_2.RelPermalink }}');">
                     <a
                         class="col-start-1 row-start-1"
