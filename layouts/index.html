@@ -73,7 +73,7 @@
                                     class="mt-[50%] min-h-full bg-cover bg-left py-10 sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
                                     style="background-image: url('{{ $img_clemovitch_theatre.RelPermalink }}');">
                                     <div
-                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:col-start-2 md:my-auto">
+                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:col-start-2 md:my-auto lg:pl-0 lg:pr-32 xl:pr-44">
                                         <div>
                                             <h2
                                                 class="py-10 text-center font-['Open_Sans_ExtraBold'] text-4xl uppercase md:text-left">
@@ -116,7 +116,7 @@
                                     class="mt-[50%] min-h-full bg-cover bg-right-bottom py-10 sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
                                     style="background-image: url('{{ $img_clemovitch_ferdinand_theatre.RelPermalink }}');">
                                     <div
-                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:my-auto">
+                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:my-auto lg:pl-32 lg:pr-0 xl:pl-44">
                                         <div>
                                             <h2
                                                 class="py-10 text-center font-['Open_Sans_ExtraBold'] text-4xl uppercase md:text-left">
@@ -232,8 +232,8 @@
             <section
                 id="livre"
                 class="min-h-screen items-center gap-12 bg-gradient-to-r from-[#77141e] to-[#8a1927] lg:grid lg:grid-cols-2 lg:bg-cover lg:bg-no-repeat">
-                <div class="col-start-2 row-start-1 px-5 py-6">
-                    <h2 class="text-5xl uppercase">Le livre</h2>
+                <div class="col-start-2 row-start-1 px-5 py-6 lg:pl-0 lg:pr-32 xl:pr-44">
+                    <h2 class="text-6xl uppercase">Le livre</h2>
 
                     <p class="py-10 text-sm">
                         La rhétorique est partout. Dans les discours politiques comme dans les spots publicitaires. Dans
@@ -273,6 +273,22 @@
                 </div>
             </section>
 
+            {{ $img_twitch := resources.Get "img/twitch.png" }}
+            <section
+                id="twitch"
+                class="min-h-screen items-center gap-12 bg-cover bg-right bg-no-repeat lg:grid lg:grid-cols-2"
+                style="background-image: url('{{ $img_twitch.RelPermalink }}');">
+                <div class="px-5 py-6 lg:pl-32 lg:pr-0 xl:pl-44">
+                    <h2 class="text-6xl uppercase">Les rendez-vous Twitch</h2>
+
+                    <p class="py-10 text-sm">
+                        Retrouvez-moi en direct sur Twitch pour le Café Rhétorique, l’émission qui décrypte les discours
+                        et l’actualité politique&nbsp;! Rendez-vous tous les lundis, mercredis et vendredis, début vers
+                        9h, fin vers midi&nbsp;!
+                    </p>
+                </div>
+            </section>
+
             <section id="chroniques" class="bg-[#090f25] px-2 py-10 text-center">
                 <h2 class="text-center text-4xl uppercase">Les chroniques</h2>
                 <div class="__chroniques my-10 flex flex-wrap justify-center gap-6"></div>
@@ -291,6 +307,7 @@
                     </a>
                 </template>
             </section>
+
             <section id="contact" class="mx-auto flex flex-col items-center bg-black py-16 text-center">
                 <h2 class="py-4 text-5xl uppercase">Contact</h2>
                 <div class="flex gap-1.5">
