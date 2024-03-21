@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="{{ .Site.LanguageCode }}">
+    {{ partial "head" . }}
+    <body class="text-white">
+        <main>
+            {{ $img_clemovitch1 := resources.Get "img/clemovitch1.png" }}
+            <section
+                id="top"
+                class="h-dvh max-h-dvh bg-cover bg-right-top bg-no-repeat"
+                style="background-image: url('{{ $img_clemovitch1.RelPermalink }}');">
+                <header class="top-0 z-10 hidden sm:block">
+                    <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+                        <a href="#spectacle" class="px-3 py-2 text-xs font-medium uppercase text-gray-300">
+                            Le spectacle
+                        </a>
+                        <a href="#livre" class="px-3 py-2 text-xs font-medium uppercase text-gray-300"> Le livre </a>
+                        <a href="#twitch" class="px-3 py-2 text-xs font-medium uppercase text-gray-300">
+                            Les rendez-vous Twitch
+                        </a>
+                        <a href="#chroniques" class="px-3 py-2 text-xs font-medium uppercase text-gray-300">
+                            Les chroniques
+                        </a>
+                        <a href="#contact" class="px-3 py-2 text-xs font-medium uppercase text-gray-300"> Contact </a>
+                        <div class="flex gap-1.5">
+                            <a
+                                href="//instagram.com/clemovitch"
+                                class="icon-[mage--instagram-circle] h-7 w-7 text-red-600"></a>
+                            <a
+                                href="//facebook.com/clemovitch"
+                                class="icon-[mage--facebook-circle] h-7 w-7 text-red-600"></a>
+                            <a
+                                href="//youtube.com/clemovitch"
+                                class="icon-[entypo-social--youtube-with-circle] h-7 w-7 text-red-600"></a>
+                        </div>
+                    </nav>
+                </header>
+                <div
+                    class="grid h-dvh max-h-dvh grid-cols-1 grid-rows-2 items-center text-left sm:grid-cols-2 sm:grid-rows-1">
+                    <h2
+                        class="row-start-2 mx-3 mb-16 mt-14 text-5xl font-bold uppercase tracking-tight sm:row-start-1 sm:mx-5 md:pl-12 md:text-6xl lg:mt-0 xl:text-7xl">
+                        Clément Viktorovitch
+                    </h2>
+                </div>
+            </section>
+
+            <div id="spectacle">
+                <section class="overflow-hidden">
+                    <div class="relative">
+                        <div class="__carousel_slides flex min-h-screen flex-nowrap overflow-hidden">
+                            {{ $img_clemovitch2 := resources.Get "img/clemovitch2.png" }}
+                            <div
+                                class="min-h-full flex-[0_0_100%] bg-cover bg-top py-10 duration-500 ease-in"
+                                style="background-image: url('{{ $img_clemovitch2.RelPermalink }}');">
+                                <div class="grid h-full grid-cols-2 grid-rows-1 gap-5">
+                                    <div class="my-auto flex justify-end sm:pr-5 md:pr-10 lg:pr-28">
+                                        <div class="font-['Open_Sans_ExtraBold']">
+                                            <h2
+                                                class="text-7xl font-black uppercase leading-[.8] text-red-600 sm:text-8xl">
+                                                L'art<br />de<br />ne<br />pas<br />dire
+                                            </h2>
+                                            <button
+                                                class="__carousel_next mt-16 border-4 border-red-600 px-2 py-1 text-sm font-bold uppercase">
+                                                <span>En savoir plus</span>
+                                                <span class="icon-[ic--sharp-chevron-right] items-center"></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-h-full flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
+                                {{ $img_clemovitch_theatre := resources.Get "img/clemovitch-theatre.png" }}
+                                <div
+                                    class="mt-[50%] min-h-full bg-cover bg-left py-10 sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
+                                    style="background-image: url('{{ $img_clemovitch_theatre.RelPermalink }}');">
+                                    <div
+                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:col-start-2 md:my-auto">
+                                        <div>
+                                            <h2
+                                                class="py-10 text-center font-['Open_Sans_ExtraBold'] text-4xl uppercase md:text-left">
+                                                Résumé
+                                            </h2>
+                                            <p>
+                                                Dans la continuité de son livre Le Pouvoir Rhétorique, Clément
+                                                Viktorovitch, docteur en science politique, soucieux de vulgarisation
+                                                sur France Info, Clique ou Quotidien, apparaît pour la première fois au
+                                                théâtre dans une fiction grinçante. Il y incarne le conseiller en
+                                                communication du Président de la République qui, après avoir été
+                                                brutalement évincé, cherche à se venger. Son arme ? Une conférence, dans
+                                                laquelle il décide de dévoiler tous les secrets qu’ils ont utilisés pour
+                                                conquérir le pouvoir. Lui qui n’a plus rien à perdre, décide de tout
+                                                détruire. Au fil de sa démonstration, toutefois, cet homme rongé par le
+                                                rejet en vient à s’interroger. Et si l’art qu’il a pratiqué n’avait
+                                                finalement rien d’anodin ? Au fil des dissimulations et des
+                                                manipulations, ce qui a été perverti, ne serait-ce pas, en réalité, le
+                                                sens même de la démocratie ?
+                                            </p>
+                                            <div class="mt-16 flex gap-4 font-['Open_Sans_ExtraBold']">
+                                                <button
+                                                    class="__carousel_prev border-4 border-red-600 px-2 py-1 text-sm font-bold uppercase">
+                                                    <span class="icon-[ic--sharp-chevron-left] items-center"></span>
+                                                    <span>Retour</span>
+                                                </button>
+                                                <button
+                                                    class="__carousel_next border-4 border-red-600 px-2 py-1 text-sm font-bold uppercase">
+                                                    <span>En savoir plus</span>
+                                                    <span class="icon-[ic--sharp-chevron-right] items-center"></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-h-full flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
+                                {{ $img_clemovitch_ferdinand_theatre := resources.Get "img/clemovitch-ferdinand-theatre.png" }}
+                                <div
+                                    class="mt-[50%] min-h-full bg-cover bg-right-bottom py-10 sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
+                                    style="background-image: url('{{ $img_clemovitch_ferdinand_theatre.RelPermalink }}');">
+                                    <div
+                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:my-auto">
+                                        <div>
+                                            <h2
+                                                class="py-10 text-center font-['Open_Sans_ExtraBold'] text-4xl uppercase md:text-left">
+                                                Ferdinand Barbet
+                                            </h2>
+                                            <p>
+                                                Ferdinand Barbet s’est formé comme acteur au conservatoire de Lyon, puis
+                                                à l’ÉRACM (École Régionale d’Acteurs de Cannes et Marseille) dont il
+                                                sort diplômé en 2013. Il écrit, joue et met en scène des dizaines de
+                                                spectacles dont des classiques comme
+                                                <i>Les Bacchantes</i> d’Euripide, ou des textes plus contemporains comme
+                                                <i>Fairy Queen</i> d’Olivier Cadiot. Sa pièce
+                                                <i>Zombies, Poèmes d’amour</i> est parue aux éditions du festival En
+                                                Acte(s), et son texte <i>Narcisse</i> aux éditions de La Comédie de
+                                                Reims. De 2016 à 2019, il dirige à la Comédie de Reims (CDN) le
+                                                Collectif 17, composé de sept comédiens et comédiennes en résidence avec
+                                                qui il crée notamment le diptyque
+                                                <i>Quelqu’un arrive et je ne me connais plus</i>. Depuis 2019, il
+                                                intervient auprès des étudiants de L’ERACM pour former les comédiens
+                                                professionnels de demain.
+                                            </p>
+                                            <button
+                                                class="__carousel_prev mt-16 border-4 border-red-600 px-2 py-1 font-['Open_Sans_ExtraBold'] text-sm font-bold uppercase">
+                                                <span class="icon-[ic--sharp-chevron-left] items-center"></span>
+                                                <span>Retour</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="__carousel_dots absolute inset-x-1/2 bottom-2 z-10 flex justify-center"></div>
+                    </div>
+                </section>
+
+                <section id="dates" class="min-h-screen bg-black">
+                    <div class="min-h-screen">
+                        {{ $img_clemovitch3 := resources.Get "img/clemovitch3.png" }}
+                        <div
+                            class="hidden h-full min-h-[953px] flex-col bg-contain bg-no-repeat px-6 py-14 lg:flex"
+                            style="background-image: url('{{ $img_clemovitch3.RelPermalink }}');">
+                            <div class="m-auto w-full max-w-screen-xl">
+                                <h2 class="py-14 text-center text-4xl uppercase">Les dates</h2>
+                                <div class="flex justify-center gap-6 font-['Gotham_Bold']">
+                                    <div id="__dates_col_l" class="flex w-full flex-col gap-2"></div>
+                                    <div id="__dates_col_r" class="flex w-full flex-col gap-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ $img_clemovitch4 := resources.Get "img/clemovitch4.png" }}
+                        <div
+                            class="flex h-full min-h-[700px] flex-col bg-cover bg-center bg-no-repeat px-6 pb-14 lg:hidden"
+                            style="background-image: url('{{ $img_clemovitch4.RelPermalink }}');">
+                            <h2 class="py-5 text-center text-4xl uppercase">Les dates</h2>
+                            <div class="m-auto w-full max-w-screen-xl">
+                                <div
+                                    id="__dates"
+                                    class="flex w-full flex-col justify-center gap-2 font-['Gotham_Bold'] text-xs"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <template id="date">
+                        <div class="flex w-full flex-nowrap gap-4 text-nowrap uppercase">
+                            <div class="content-center font-semibold">
+                                <a class="__date_info_location" href="" target="_blank">
+                                    <span class="__date_info_city text-red-600">City</span>
+                                    <span class="__date_info_city_details">(Details)</span>
+                                </a>
+                            </div>
+                            <span class="w-full border-b border-stone-300"></span>
+                            <time
+                                datetime="YYYY-MM-DDTHH:mm"
+                                title="Full date"
+                                class="__date_info_datetime content-center font-bold">
+                                <span class="__date_info_day">Day</span>
+                                <span class="__date_info_daymonth">DD.MM</span>
+                            </time>
+                            <a
+                                class="__date_info_link flex min-w-28 max-w-28 items-center justify-center border-4 border-red-600 px-2 text-center text-sm font-bold"
+                                href=""
+                                target="_blank">
+                                Réserver
+                            </a>
+                        </div>
+                    </template>
+                    <template id="date_full">
+                        <div class="flex w-full flex-nowrap gap-4 text-nowrap uppercase">
+                            <div class="content-center font-semibold">
+                                <a class="__date_info_location" href="" target="_blank">
+                                    <span class="__date_info_city text-red-600">City</span>
+                                    <span class="__date_info_city_details">(Details)</span>
+                                </a>
+                            </div>
+                            <span class="w-full border-b border-stone-300"></span>
+                            <time
+                                datetime="YYYY-MM-DDTHH:mm"
+                                title="Full date"
+                                class="__date_info_datetime content-center font-bold">
+                                <span class="__date_info_day">Day</span>
+                                <span class="__date_info_daymonth">DD.MM</span>
+                            </time>
+                            <a
+                                class="__date_info_link flex min-w-28 max-w-28 items-center justify-center border-4 border-red-600 bg-red-600 px-2 text-center text-sm font-bold"
+                                href=""
+                                target="_blank">
+                                Complet
+                            </a>
+                        </div>
+                    </template>
+                </section>
+            </div>
+
+            <section
+                id="livre"
+                class="h-screen items-center gap-12 bg-gradient-to-r from-[#77141e] to-[#8a1927] lg:grid lg:grid-cols-2 lg:bg-cover lg:bg-no-repeat">
+                <div class="col-start-2 row-start-1 px-5 py-6">
+                    <h2 class="text-5xl uppercase">Le livre</h2>
+
+                    <p class="py-10 text-sm">
+                        La rhétorique est partout. Dans les discours politiques comme dans les spots publicitaires. Dans
+                        les réunions professionnelles comme dans les dîners de famille. Dans les entretiens d’embauche
+                        comme dans les rendez-vous galants. Pas un jour ne passe sans que nous ayons à défendre une
+                        idée, un projet, un produit&nbsp;; et à nous protéger contre d’éventuelles fourberies. Que cela
+                        nous plaise ou non, convaincre est un pouvoir. À nous d’apprendre à le maîtriser.<br />
+                        Et de savoir y résister.<br />
+                        Car la rhétorique n’est ni innée, ni inexplicable. Elle repose sur une technique, obéit à des
+                        règles, mobilise des procédés, des stratagèmes, des outils. Dans ce traité accessible et
+                        concret, ponctué d’exemples et de cas pratiques, Clément Viktorovitch nous en révèle tous les
+                        secrets. Au fil des pages, il nous montre comment produire et décrypter les discours, mener les
+                        débats et les discussions, déjouer les manipulations.
+                        <br /><br />
+                        L’art de convaincre est un pouvoir trop grand pour ne pas être partagé&nbsp;!
+                        <br /><br />
+                        Clément Viktorovitch est docteur en science politique. Il enseigne la rhétorique et la
+                        négociation à Sciences Po depuis plus de dix ans. Il a dispensé ses cours à l’ESSEC, l’ENA,
+                        l’École de Guerre, l’Université Paris 13. Pédagogue passionné, soucieux de vulgarisation, il
+                        s’est fait connaître par ses chroniques dans les médias, où il analyse sans complaisance les
+                        discours politiques.
+                    </p>
+                </div>
+                {{ $img_livre_bg_2 := resources.Get "img/livre-bg-2.png" }}
+                <div
+                    class="bg-cover bg-center bg-no-repeat px-28 py-12 lg:!bg-none"
+                    style="background-image: url('{{ $img_livre_bg_2.RelPermalink }}');">
+                    <a
+                        class="col-start-1 row-start-1"
+                        href="https://www.editionspoints.com/ouvrage/le-pouvoir-rhetorique-clement-viktorovitch/9782757899052"
+                        target="_blank">
+                        {{ $img_poche := resources.Get "img/poche.png" }}
+                        <img
+                            src="{{ $img_poche.RelPermalink }}"
+                            alt="Couverture du livre Le Pouvoir Rhétorique de Clément Viktorovitch" />
+                    </a>
+                </div>
+            </section>
+
+            <section id="chroniques" class="bg-[#090f25] px-2 py-10 text-center">
+                <h2 class="text-center text-4xl uppercase">Les chroniques</h2>
+                <div class="__chroniques my-10 flex flex-wrap justify-center gap-6"></div>
+                <div class="flex items-center justify-center">
+                    <a
+                        href="https://www.youtube.com/playlist?list=PLg6GanYvTasVeZzKcHcxJoWw9jUTOQYGT"
+                        target="_blank"
+                        class="border-2 px-5 py-1 text-center font-['Gotham_Bold'] uppercase leading-normal"
+                        role="button">
+                        Toutes les chroniques
+                    </a>
+                </div>
+                <template id="__chronique">
+                    <a class="__chronique_info_link max-w-sm" href="" target="_blank">
+                        <img class="__chronique_info_img" src="" alt="video title" title="video title" />
+                    </a>
+                </template>
+            </section>
+            <section id="contact" class="mx-auto flex flex-col items-center bg-black py-16 text-center">
+                <h2 class="py-4 text-5xl uppercase">Contact</h2>
+                <div class="flex gap-1.5">
+                    <a href="//instagram.com/clemovitch" class="icon-[mage--instagram-circle] h-7 w-7 text-red-600"></a>
+                    <a href="//facebook.com/clemovitch" class="icon-[mage--facebook-circle] h-7 w-7 text-red-600"></a>
+                    <a
+                        href="//youtube.com/clemovitch"
+                        class="icon-[entypo-social--youtube-with-circle] h-7 w-7 text-red-600"></a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-black p-6">
+            <p class="text-center text-sm">© 2024 Clément Viktorovitch. Tous droits réservés.</p>
+        </footer>
+        {{ $js_carousel := resources.Get "js/carousel.js" }}
+        <script src="{{ $js_carousel.RelPermalink }}"></script>
+        {{ $js_spectacle := resources.Get "js/spectacle.js" }}
+        <script src="{{ $js_spectacle.RelPermalink }}"></script>
+        {{ $js_chroniques := resources.Get "js/chroniques.js" }}
+        <script src="{{ $js_chroniques.RelPermalink }}"></script>
+    </body>
+</html>
