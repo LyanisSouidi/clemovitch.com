@@ -10,27 +10,41 @@
                 style="background-image: url('{{ $img_clemovitch1.RelPermalink }}');">
                 <header class="top-0 z-10 hidden sm:block">
                     <nav class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
-                        <a href="#spectacle" class="px-3 py-2 text-xs font-medium uppercase text-gray-300">
+                        <a
+                            href="#spectacle"
+                            class="px-3 py-2 font-['Gotham_Bold'] text-xs font-medium uppercase text-gray-300">
                             Le spectacle
                         </a>
-                        <a href="#livre" class="px-3 py-2 text-xs font-medium uppercase text-gray-300"> Le livre </a>
-                        <a href="#twitch" class="px-3 py-2 text-xs font-medium uppercase text-gray-300">
+                        <a
+                            href="#livre"
+                            class="px-3 py-2 font-['Gotham_Bold'] text-xs font-medium uppercase text-gray-300">
+                            Le livre
+                        </a>
+                        <a
+                            href="#twitch"
+                            class="px-3 py-2 font-['Gotham_Bold'] text-xs font-medium uppercase text-gray-300">
                             Les rendez-vous Twitch
                         </a>
-                        <a href="#chroniques" class="px-3 py-2 text-xs font-medium uppercase text-gray-300">
+                        <a
+                            href="#chroniques"
+                            class="px-3 py-2 font-['Gotham_Bold'] text-xs font-medium uppercase text-gray-300">
                             Les chroniques
                         </a>
-                        <a href="#contact" class="px-3 py-2 text-xs font-medium uppercase text-gray-300"> Contact </a>
+                        <a
+                            href="#contact"
+                            class="px-3 py-2 font-['Gotham_Bold'] text-xs font-medium uppercase text-gray-300">
+                            Contact
+                        </a>
                         <div class="flex gap-1.5">
                             <a
                                 href="//instagram.com/clemovitch"
-                                class="icon-[mage--instagram-circle] h-7 w-7 text-red-600"></a>
+                                class="icon-[mage--instagram-circle] h-7 w-7 text-[#d50d3d]"></a>
                             <a
                                 href="//facebook.com/clemovitch"
-                                class="icon-[mage--facebook-circle] h-7 w-7 text-red-600"></a>
+                                class="icon-[mage--facebook-circle] h-7 w-7 text-[#d50d3d]"></a>
                             <a
                                 href="//youtube.com/clemovitch"
-                                class="icon-[entypo-social--youtube-with-circle] h-7 w-7 text-red-600"></a>
+                                class="icon-[entypo-social--youtube-with-circle] h-7 w-7 text-[#d50d3d]"></a>
                         </div>
                     </nav>
                 </header>
@@ -52,16 +66,18 @@
                                 class="min-h-full flex-[0_0_100%] bg-cover bg-top py-10 duration-500 ease-in"
                                 style="background-image: url('{{ $img_clemovitch2.RelPermalink }}');">
                                 <div class="grid h-full grid-cols-2 grid-rows-1 gap-5">
-                                    <div class="my-auto flex justify-end sm:pr-5 md:pr-10 lg:pr-28">
+                                    <div class="my-auto flex justify-end px-4 sm:pr-5 md:pr-10 lg:pr-28">
                                         <div class="font-['Open_Sans_ExtraBold']">
-                                            <h2
-                                                class="text-7xl font-black uppercase leading-[.8] text-red-600 sm:text-8xl">
-                                                L'art<br />de<br />ne<br />pas<br />dire
-                                            </h2>
+                                            {{ $img_spectacle_titre := resources.Get "img/spectacle-titre.png" }}
+                                            <img
+                                                class="max-h-96"
+                                                src="{{ $img_spectacle_titre.RelPermalink }}"
+                                                alt="L'art de ne pas dire" />
                                             <button
-                                                class="__carousel_next mt-16 border-4 border-red-600 px-2 py-1 text-sm font-bold uppercase">
+                                                class="__carousel_next mt-16 flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
                                                 <span>En savoir plus</span>
-                                                <span class="icon-[ic--sharp-chevron-right] items-center"></span>
+                                                <span
+                                                    class="icon-[ic--sharp-chevron-right] h-5 w-5 items-center"></span>
                                             </button>
                                         </div>
                                     </div>
@@ -96,14 +112,16 @@
                                             </p>
                                             <div class="mt-16 flex gap-4 font-['Open_Sans_ExtraBold']">
                                                 <button
-                                                    class="__carousel_prev border-4 border-red-600 px-2 py-1 text-sm font-bold uppercase">
-                                                    <span class="icon-[ic--sharp-chevron-left] items-center"></span>
+                                                    class="__carousel_prev flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
+                                                    <span
+                                                        class="icon-[ic--sharp-chevron-left] h-5 w-5 items-center"></span>
                                                     <span>Retour</span>
                                                 </button>
                                                 <button
-                                                    class="__carousel_next border-4 border-red-600 px-2 py-1 text-sm font-bold uppercase">
+                                                    class="__carousel_next flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
                                                     <span>En savoir plus</span>
-                                                    <span class="icon-[ic--sharp-chevron-right] items-center"></span>
+                                                    <span
+                                                        class="icon-[ic--sharp-chevron-right] h-5 w-5 items-center"></span>
                                                 </button>
                                             </div>
                                         </div>
@@ -139,8 +157,8 @@
                                                 professionnels de demain.
                                             </p>
                                             <button
-                                                class="__carousel_prev mt-16 border-4 border-red-600 px-2 py-1 font-['Open_Sans_ExtraBold'] text-sm font-bold uppercase">
-                                                <span class="icon-[ic--sharp-chevron-left] items-center"></span>
+                                                class="__carousel_prev mt-16 flex items-center border-[3px] border-[#d50d3d] px-2 py-1 font-['Open_Sans_ExtraBold'] text-sm font-bold uppercase">
+                                                <span class="icon-[ic--sharp-chevron-left] h-5 w-5 items-center"></span>
                                                 <span>Retour</span>
                                             </button>
                                         </div>
@@ -182,7 +200,7 @@
                         <div class="flex w-full flex-nowrap gap-4 text-nowrap uppercase">
                             <div class="content-center font-semibold">
                                 <a class="__date_info_location" href="" target="_blank">
-                                    <span class="__date_info_city text-red-600">City</span>
+                                    <span class="__date_info_city text-[#d50d3d]">City</span>
                                     <span class="__date_info_city_details">(Details)</span>
                                 </a>
                             </div>
@@ -195,7 +213,7 @@
                                 <span class="__date_info_daymonth">DD.MM</span>
                             </time>
                             <a
-                                class="__date_info_link flex min-w-28 max-w-28 items-center justify-center border-4 border-red-600 px-2 text-center text-sm font-bold"
+                                class="__date_info_link flex min-w-28 max-w-28 items-center justify-center border-[3px] border-[#d50d3d] px-2 text-center text-sm font-bold"
                                 href=""
                                 target="_blank">
                                 Réserver
@@ -206,7 +224,7 @@
                         <div class="flex w-full flex-nowrap gap-4 text-nowrap uppercase">
                             <div class="content-center font-semibold">
                                 <a class="__date_info_location" href="" target="_blank">
-                                    <span class="__date_info_city text-red-600">City</span>
+                                    <span class="__date_info_city text-[#d50d3d]">City</span>
                                     <span class="__date_info_city_details">(Details)</span>
                                 </a>
                             </div>
@@ -219,7 +237,7 @@
                                 <span class="__date_info_daymonth">DD.MM</span>
                             </time>
                             <a
-                                class="__date_info_link flex min-w-28 max-w-28 items-center justify-center border-4 border-red-600 bg-red-600 px-2 text-center text-sm font-bold"
+                                class="__date_info_link flex min-w-28 max-w-28 items-center justify-center border-[3px] border-[#d50d3d] bg-[#d50d3d] px-2 text-center text-sm font-bold"
                                 href=""
                                 target="_blank">
                                 Complet
@@ -311,11 +329,13 @@
             <section id="contact" class="mx-auto flex flex-col items-center bg-black py-16 text-center">
                 <h2 class="py-4 text-5xl uppercase">Contact</h2>
                 <div class="flex gap-1.5">
-                    <a href="//instagram.com/clemovitch" class="icon-[mage--instagram-circle] h-7 w-7 text-red-600"></a>
-                    <a href="//facebook.com/clemovitch" class="icon-[mage--facebook-circle] h-7 w-7 text-red-600"></a>
+                    <a
+                        href="//instagram.com/clemovitch"
+                        class="icon-[mage--instagram-circle] h-7 w-7 text-[#d50d3d]"></a>
+                    <a href="//facebook.com/clemovitch" class="icon-[mage--facebook-circle] h-7 w-7 text-[#d50d3d]"></a>
                     <a
                         href="//youtube.com/clemovitch"
-                        class="icon-[entypo-social--youtube-with-circle] h-7 w-7 text-red-600"></a>
+                        class="icon-[entypo-social--youtube-with-circle] h-7 w-7 text-[#d50d3d]"></a>
                 </div>
             </section>
         </main>
