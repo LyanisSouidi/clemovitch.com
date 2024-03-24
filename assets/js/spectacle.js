@@ -1,6 +1,9 @@
 async function getDates() {
     let request = await fetch('/dates.json', { headers: { Accept: 'application/json' } });
     let data = await request.json();
+    data.dates = data.dates
+        .filter(date => new Date(date.datetime) > new Date())
+        .sort((a, b) => new Date(a.datetime) - new Date(b.datetime));
     return data.dates;
 }
 
