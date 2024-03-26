@@ -6,7 +6,7 @@
             {{ $img_clemovitch1 := resources.Get "img/clemovitch1.png" }}
             <section
                 id="top"
-                class="h-dvh max-h-dvh bg-cover bg-[top_right_-100px] bg-no-repeat min-[500px]:bg-right-top"
+                class="h-dvh max-h-dvh bg-cover bg-center bg-no-repeat"
                 style="background-image: url('{{ $img_clemovitch1.RelPermalink }}');">
                 {{ partial "header" . }}
                 <div
@@ -131,14 +131,14 @@
                     </div>
                 </section>
 
-                <section id="dates" class="min-h-screen bg-black">
+                <section id="tournee" class="min-h-screen bg-black">
                     <div class="min-h-screen">
                         {{ $img_clemovitch3 := resources.Get "img/clemovitch3.png" }}
                         <div
                             class="hidden h-full min-h-[953px] flex-col bg-contain bg-no-repeat px-6 py-14 lg:flex"
                             style="background-image: url('{{ $img_clemovitch3.RelPermalink }}');">
                             <div class="m-auto w-full max-w-screen-xl">
-                                <h2 class="py-14 text-center text-4xl uppercase">Les dates</h2>
+                                <h2 class="py-14 text-center text-4xl uppercase">La tournée</h2>
                                 <div class="relative flex justify-center gap-6 font-['Gotham_Bold']">
                                     <span
                                         class="absolute left-0 right-0 top-1/2 m-auto w-fit -translate-y-1/2 -rotate-[15deg] bg-[#d50d3d] px-8 py-4 text-center font-['Gotham_Bold'] text-8xl font-black uppercase">
