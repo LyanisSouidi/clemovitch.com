@@ -1,6 +1,14 @@
 {
     "chroniques": [
         {
+            "title": "La rigueur : tabou politique... ou arme rhétorique ?",
+            "id": "z02iXyB-PIc"
+        },
+        {
+            "title": "Rationner internet : la pire idée du XXIè siècle ?",
+            "id": "6ePaDYOKYGE"
+        },
+        {
             "title": "Les travaux de la cour des comptes : expertise technique... ou préférence idéologique ?",
             "id": "2yy39ZjzK2U"
         },
@@ -15,14 +23,6 @@
         {
             "title": "Emmanuel Macron et les \"Français de préférence\"",
             "id": "gUgL8-zBdWc"
-        },
-        {
-            "title": "Face au droit de grève : un \"devoir de travailler\" ?",
-            "id": "nEJwsvPYz2U"
-        },
-        {
-            "title": "Où s'arrête vraiment \"l'arc républicain\" ?",
-            "id": "YLVEl22OkOA"
         }
     ]
 }

@@ -31,11 +31,11 @@
                                         <div class="font-['Open_Sans_ExtraBold']">
                                             {{ $img_spectacle_titre := resources.Get "img/spectacle-titre.png" }}
                                             <img
-                                                class="max-h-[28rem]"
+                                                class="max-h-96"
                                                 src="{{ $img_spectacle_titre.RelPermalink }}"
                                                 alt="L'art de ne pas dire" />
                                             <button
-                                                class="__carousel_next mt-12 flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
+                                                class="__carousel_next mt-16 flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
                                                 <span>En savoir plus</span>
                                                 <span
                                                     class="icon-[ic--sharp-chevron-right] h-5 w-5 items-center"></span>
@@ -71,7 +71,19 @@
                                                 manipulations, ce qui a été perverti, ne serait-ce pas, en réalité, le
                                                 sens même de la démocratie ?
                                             </p>
-                                            <div class="mt-16 flex gap-4 font-['Open_Sans'] font-extrabold">
+                                            <div class="my-6 grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4">
+                                                <div class="flex flex-col gap-2">
+                                                    <p>Interprétation&nbsp;: Clément Viktorovitch</p>
+                                                    <p>Écriture&nbsp;: Ferdinand Barbet et Clément Viktorovitch</p>
+                                                    <p>Mise en scène et Scénographie&nbsp;: Ferdinand Barbet</p>
+                                                </div>
+                                                <div class="flex flex-col gap-2">
+                                                    <p>Création lumière&nbsp;: Gautier Devoucoux</p>
+                                                    <p>Musiques&nbsp;: Hugo Sempé</p>
+                                                    <p>Création costume&nbsp;: Augustin Rolland</p>
+                                                </div>
+                                            </div>
+                                            <div class="flex gap-4 font-['Open_Sans'] font-extrabold">
                                                 <button
                                                     class="__carousel_prev flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
                                                     <span
@@ -86,6 +98,160 @@
                                                 </button>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="min-h-full flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
+                                {{ $img_clemovitch_theatre2 := resources.Get "img/clemovitch-theatre2.png" }}
+                                <div
+                                    class="relative mt-[15%] bg-cover bg-left px-10 pb-28 pt-10 sm:px-12 md:mt-0 md:px-16 lg:px-20"
+                                    style="background-image: url('{{ $img_clemovitch_theatre2.RelPermalink }}');">
+                                    <div class="flex flex-wrap justify-center gap-10">
+                                        <div class="inline-block max-w-96">
+                                            <div class="flex flex-col gap-7">
+                                                <svg
+                                                    class="fill-[#d50d3d]"
+                                                    version="1.2"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 42 32"
+                                                    width="42"
+                                                    height="32">
+                                                    <path
+                                                        d="m13.3 0.6h8.8l-4.4 30.8h-17.6zm19.8 0h8.8l-4.4 30.8h-17.6z" />
+                                                </svg>
+                                                <p>
+                                                    Une démonstration limpide et éclairante sur le creux abyssal des
+                                                    éléments de langage, le tout agrémenté de jeux interactifs auxquels
+                                                    les spectateurs participent sans hésiter, heureux de gamberger sur
+                                                    les pièges de la parole politique.
+                                                </p>
+                                                {{ $img_le_monde := resources.Get "img/le-monde.png" }}
+                                                <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
+                                            </div>
+                                        </div>
+                                        <div class="inline-block max-w-96">
+                                            <div class="flex flex-col gap-7">
+                                                <svg
+                                                    class="fill-[#d50d3d]"
+                                                    version="1.2"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 42 32"
+                                                    width="42"
+                                                    height="32">
+                                                    <path
+                                                        d="m13.3 0.6h8.8l-4.4 30.8h-17.6zm19.8 0h8.8l-4.4 30.8h-17.6z" />
+                                                </svg>
+                                                <p>
+                                                    Une démonstration limpide et éclairante sur le creux abyssal des
+                                                    éléments de langage, le tout agrémenté de jeux interactifs auxquels
+                                                    les spectateurs participent sans hésiter, heureux de gamberger sur
+                                                    les pièges de la parole politique.
+                                                </p>
+                                                {{ $img_le_monde := resources.Get "img/le-monde.png" }}
+                                                <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
+                                            </div>
+                                        </div>
+                                        <div class="inline-block max-w-96">
+                                            <div class="flex flex-col gap-7">
+                                                <svg
+                                                    class="fill-[#d50d3d]"
+                                                    version="1.2"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 42 32"
+                                                    width="42"
+                                                    height="32">
+                                                    <path
+                                                        d="m13.3 0.6h8.8l-4.4 30.8h-17.6zm19.8 0h8.8l-4.4 30.8h-17.6z" />
+                                                </svg>
+                                                <p>
+                                                    Une démonstration limpide et éclairante sur le creux abyssal des
+                                                    éléments de langage, le tout agrémenté de jeux interactifs auxquels
+                                                    les spectateurs participent sans hésiter, heureux de gamberger sur
+                                                    les pièges de la parole politique.
+                                                </p>
+                                                {{ $img_le_monde := resources.Get "img/le-monde.png" }}
+                                                <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
+                                            </div>
+                                        </div>
+                                        <div class="hidden max-w-96 min-[920px]:inline-block">
+                                            <div class="flex flex-col gap-7">
+                                                <svg
+                                                    class="fill-[#d50d3d]"
+                                                    version="1.2"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 42 32"
+                                                    width="42"
+                                                    height="32">
+                                                    <path
+                                                        d="m13.3 0.6h8.8l-4.4 30.8h-17.6zm19.8 0h8.8l-4.4 30.8h-17.6z" />
+                                                </svg>
+                                                <p>
+                                                    Une démonstration limpide et éclairante sur le creux abyssal des
+                                                    éléments de langage, le tout agrémenté de jeux interactifs auxquels
+                                                    les spectateurs participent sans hésiter, heureux de gamberger sur
+                                                    les pièges de la parole politique.
+                                                </p>
+                                                {{ $img_le_monde := resources.Get "img/le-monde.png" }}
+                                                <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
+                                            </div>
+                                        </div>
+                                        <div class="hidden max-w-96 min-[1321px]:inline-block">
+                                            <div class="flex flex-col gap-7">
+                                                <svg
+                                                    class="fill-[#d50d3d]"
+                                                    version="1.2"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 42 32"
+                                                    width="42"
+                                                    height="32">
+                                                    <path
+                                                        d="m13.3 0.6h8.8l-4.4 30.8h-17.6zm19.8 0h8.8l-4.4 30.8h-17.6z" />
+                                                </svg>
+                                                <p>
+                                                    Une démonstration limpide et éclairante sur le creux abyssal des
+                                                    éléments de langage, le tout agrémenté de jeux interactifs auxquels
+                                                    les spectateurs participent sans hésiter, heureux de gamberger sur
+                                                    les pièges de la parole politique.
+                                                </p>
+                                                {{ $img_le_monde := resources.Get "img/le-monde.png" }}
+                                                <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
+                                            </div>
+                                        </div>
+                                        <div class="hidden max-w-96 min-[1321px]:inline-block">
+                                            <div class="flex flex-col gap-7">
+                                                <svg
+                                                    class="fill-[#d50d3d]"
+                                                    version="1.2"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 42 32"
+                                                    width="42"
+                                                    height="32">
+                                                    <path
+                                                        d="m13.3 0.6h8.8l-4.4 30.8h-17.6zm19.8 0h8.8l-4.4 30.8h-17.6z" />
+                                                </svg>
+                                                <p>
+                                                    Une démonstration limpide et éclairante sur le creux abyssal des
+                                                    éléments de langage, le tout agrémenté de jeux interactifs auxquels
+                                                    les spectateurs participent sans hésiter, heureux de gamberger sur
+                                                    les pièges de la parole politique.
+                                                </p>
+                                                {{ $img_le_monde := resources.Get "img/le-monde.png" }}
+                                                <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="absolute bottom-0 left-0 mb-10 mt-16 flex w-full justify-between gap-4 px-10 font-['Open_Sans'] font-extrabold sm:px-12 md:px-16 lg:px-20">
+                                        <button
+                                            class="__carousel_prev flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
+                                            <span class="icon-[ic--sharp-chevron-left] h-5 w-5 items-center"></span>
+                                            <span>Retour</span>
+                                        </button>
+                                        <button
+                                            class="__carousel_next flex items-center border-[3px] border-[#d50d3d] px-2 py-1 text-sm font-bold uppercase">
+                                            <span>En savoir plus</span>
+                                            <span class="icon-[ic--sharp-chevron-right] h-5 w-5 items-center"></span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -291,9 +457,9 @@
                 </template>
             </section>
 
-            <section id="contact" class="mx-auto flex flex-col items-center bg-black py-16 text-center">
+            <section id="contact" class="mx-auto flex flex-col items-center bg-black pt-16 text-center">
                 <h2 class="py-4 text-5xl uppercase">Contact</h2>
-                <div class="flex gap-1.5">
+                <div class="flex gap-1.5 pb-16">
                     {{ $icon_twitch := resources.Get "icon/twitch.svg" }}
                     <a
                         href="//twitch.tv/clemovitch"
@@ -324,6 +490,16 @@
                         target="_blank"
                         class="h-7 w-7 bg-current text-[#d50d3d]"
                         style="mask-image: url('{{ $icon_facebook.RelPermalink }}');"></a>
+                </div>
+                <div class="text-sm">
+                    <p>
+                        <b>Clément Viktorovitch&nbsp;: </b>
+                        <a href="mailto:gilles@clemovitch.com">gilles@clemovitch.com</a>
+                    </p>
+                    <p>
+                        <b>Gilles Mattana&nbsp;: </b>
+                        <a href="mailto:quoideneuf@clemovitch.com">quoideneuf@clemovitch.com</a>
+                    </p>
                 </div>
             </section>
         </main>
