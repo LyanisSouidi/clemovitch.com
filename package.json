@@ -2,6 +2,9 @@
     "name": "clemovitch.com",
     "homepage": "https://clemovitch.com",
     "repository": "github:LyanisSouidi/clemovitch.com",
+    "scripts": {
+        "build": "hugo && npx tailwindcss -o public/css/style.css"
+    },
     "prettier": {
         "trailingComma": "none",
         "tabWidth": 4,
