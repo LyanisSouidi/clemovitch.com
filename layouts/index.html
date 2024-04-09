@@ -12,7 +12,7 @@
                 <div
                     class="grid h-dvh max-h-dvh grid-cols-1 grid-rows-2 items-center text-left sm:grid-cols-2 sm:grid-rows-1">
                     <h2
-                        class="row-start-2 mx-3 mb-16 mt-14 text-5xl font-bold uppercase tracking-tight sm:row-start-1 sm:mx-5 md:pl-12 md:text-6xl lg:mt-0 xl:text-7xl">
+                        class="row-start-2 mx-3 mb-16 mt-14 text-4xl font-bold uppercase tracking-tight sm:row-start-1 sm:mx-5 sm:text-5xl md:pl-12 md:text-6xl lg:mt-0 xl:text-7xl">
                         Clément Viktorovitch
                     </h2>
                 </div>
@@ -21,7 +21,7 @@
             <div id="spectacle">
                 <section class="overflow-hidden">
                     <div class="relative">
-                        <div class="__carousel_slides flex min-h-screen flex-nowrap overflow-hidden">
+                        <div class="__carousel_slides flex min-h-svh flex-nowrap overflow-hidden">
                             {{ $img_clemovitch2 := resources.Get "img/clemovitch2.png" }}
                             <div
                                 class="min-h-full flex-[0_0_100%] bg-cover bg-top py-10 duration-500 ease-in"
@@ -47,10 +47,10 @@
                             <div class="min-h-full flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
                                 {{ $img_clemovitch_theatre := resources.Get "img/clemovitch-theatre.png" }}
                                 <div
-                                    class="mt-[50%] min-h-full bg-cover bg-left py-10 sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
+                                    class="mt-[12em] min-h-full bg-cover bg-left py-10 sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
                                     style="background-image: url('{{ $img_clemovitch_theatre.RelPermalink }}');">
                                     <div
-                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:col-start-2 md:my-auto lg:pl-0 lg:pr-32 xl:pr-44">
+                                        class="absolute mb-auto mt-[-16em] flex px-6 sm:mt-[-15%] md:relative md:col-start-2 md:my-auto lg:pl-0 lg:pr-32 xl:pr-44">
                                         <div>
                                             <h2
                                                 class="py-10 text-center font-['Open_Sans'] text-4xl font-extrabold uppercase md:text-left">
@@ -101,12 +101,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="min-h-full flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
+                            <div class="min-h-[60em] flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
                                 {{ $img_clemovitch_theatre2 := resources.Get "img/clemovitch-theatre2.png" }}
                                 <div
-                                    class="relative mt-[15%] bg-cover bg-left px-10 pb-28 pt-10 sm:px-12 md:mt-0 md:px-16 lg:px-20"
+                                    class="relative flex min-h-full items-center justify-center bg-cover bg-[left_1000px_center] px-10 pb-28 pt-10 sm:bg-[left_1200px_center] sm:px-12 md:mt-0 md:px-16 lg:bg-left lg:px-20"
                                     style="background-image: url('{{ $img_clemovitch_theatre2.RelPermalink }}');">
-                                    <div class="flex flex-wrap justify-center gap-10">
+                                    <div class="flex max-w-7xl flex-wrap justify-center gap-10">
                                         <div class="inline-block max-w-96">
                                             <div class="flex flex-col gap-7">
                                                 <svg
@@ -129,6 +129,7 @@
                                                 <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
                                             </div>
                                         </div>
+                                        <!--
                                         <div class="inline-block max-w-96">
                                             <div class="flex flex-col gap-7">
                                                 <svg
@@ -239,6 +240,7 @@
                                                 <img class="ml-auto w-1/2" src="{{ $img_le_monde.RelPermalink }}" />
                                             </div>
                                         </div>
+                                        -->
                                     </div>
                                     <div
                                         class="absolute bottom-0 left-0 mb-10 mt-16 flex w-full justify-between gap-4 px-10 font-['Open_Sans'] font-extrabold sm:px-12 md:px-16 lg:px-20">
@@ -258,10 +260,10 @@
                             <div class="min-h-full flex-[0_0_100%] flex-row bg-black duration-500 ease-in">
                                 {{ $img_clemovitch_ferdinand_theatre := resources.Get "img/clemovitch-ferdinand-theatre.png" }}
                                 <div
-                                    class="mt-[50%] min-h-full bg-cover bg-[center_right_-100px] py-10 min-[500px]:bg-right sm:mt-[15%] md:mt-0 md:grid md:grid-cols-2"
+                                    class="mt-[35em] min-h-full bg-cover bg-[right_-500px_bottom_400px] py-10 min-[500px]:bg-right sm:mt-[60%] md:mt-0 md:grid md:grid-cols-2"
                                     style="background-image: url('{{ $img_clemovitch_ferdinand_theatre.RelPermalink }}');">
                                     <div
-                                        class="absolute mb-auto mt-[-50%] flex px-6 sm:mt-[-15%] md:relative md:my-auto lg:pl-32 lg:pr-0 xl:pl-44">
+                                        class="absolute mb-auto mt-[-35em] flex px-6 sm:mt-[-60%] md:relative md:my-auto lg:pl-32 lg:pr-0 xl:pl-44">
                                         <div>
                                             <h2
                                                 class="py-10 text-center font-['Open_Sans'] text-4xl font-extrabold uppercase md:text-left">
@@ -297,8 +299,8 @@
                     </div>
                 </section>
 
-                <section id="tournee" class="min-h-screen bg-black">
-                    <div class="min-h-screen">
+                <section id="tournee" class="min-h-svh bg-black">
+                    <div class="min-h-svh">
                         {{ $img_clemovitch3 := resources.Get "img/clemovitch3.png" }}
                         <div
                             class="hidden h-full min-h-[953px] flex-col bg-contain bg-no-repeat px-6 py-14 lg:flex"
@@ -323,13 +325,13 @@
                             <div class="m-auto w-full max-w-screen-xl">
                                 <div
                                     id="__dates"
-                                    class="flex w-full flex-col justify-center gap-2 font-['Gotham_Bold'] text-xs"></div>
+                                    class="flex w-full flex-col justify-center gap-2 text-center font-['Gotham_Bold'] text-xs"></div>
                             </div>
                         </div>
                     </div>
                     <template id="date">
                         <div class="flex w-full flex-nowrap gap-4 text-nowrap uppercase">
-                            <div class="content-center font-semibold">
+                            <div class="flex content-center items-center text-left font-semibold">
                                 <a class="__date_info_location" href="" target="_blank">
                                     <span class="__date_info_city text-[#d50d3d]">City</span>
                                     <span class="__date_info_city_details">(Details)</span>
@@ -353,7 +355,7 @@
                     </template>
                     <template id="date_full">
                         <div class="flex w-full flex-nowrap gap-4 text-nowrap uppercase">
-                            <div class="content-center font-semibold">
+                            <div class="flex content-center items-center text-left font-semibold">
                                 <a class="__date_info_location" href="" target="_blank">
                                     <span class="__date_info_city text-[#d50d3d]">City</span>
                                     <span class="__date_info_city_details">(Details)</span>
@@ -380,7 +382,7 @@
 
             <section
                 id="livre"
-                class="min-h-screen items-center gap-12 bg-gradient-to-r from-[#77141e] to-[#8a1927] lg:grid lg:grid-cols-2 lg:bg-cover lg:bg-no-repeat">
+                class="min-h-svh items-center gap-12 bg-gradient-to-r from-[#77141e] to-[#8a1927] lg:grid lg:grid-cols-2 lg:bg-cover lg:bg-no-repeat">
                 <div class="col-start-2 row-start-1 px-5 py-6 lg:pl-0 lg:pr-32 xl:pr-44">
                     <h2 class="text-6xl uppercase">Le livre</h2>
 
@@ -425,7 +427,7 @@
             {{ $img_twitch := resources.Get "img/twitch.png" }}
             <section
                 id="twitch"
-                class="min-h-screen items-center gap-12 bg-cover bg-right bg-no-repeat lg:grid lg:grid-cols-2"
+                class="min-h-svh items-center gap-12 bg-cover bg-right bg-no-repeat lg:grid lg:grid-cols-2"
                 style="background-image: url('{{ $img_twitch.RelPermalink }}');">
                 <div class="px-5 py-6 lg:pl-32 lg:pr-0 xl:pl-44">
                     <h2 class="text-6xl uppercase">Les rendez-vous Twitch</h2>
@@ -440,7 +442,7 @@
 
             <section id="chroniques" class="bg-[#090f25] px-2 py-10 text-center">
                 <h2 class="text-center text-4xl uppercase">Les chroniques</h2>
-                <div class="__chroniques my-10 flex flex-wrap justify-center gap-6"></div>
+                <div class="__chroniques mx-auto my-10 flex max-w-7xl flex-wrap justify-center gap-6"></div>
                 <div class="flex items-center justify-center">
                     <a
                         href="https://www.youtube.com/playlist?list=PLg6GanYvTasVeZzKcHcxJoWw9jUTOQYGT"
@@ -493,12 +495,12 @@
                 </div>
                 <div class="text-sm">
                     <p>
-                        <b>Clément Viktorovitch&nbsp;: </b>
-                        <a href="mailto:gilles@clemovitch.com">gilles@clemovitch.com</a>
+                        <b>Clément&nbsp;: </b>
+                        <a href="mailto:quoideneuf@clemovitch.com">quoideneuf@clemovitch.com</a>
                     </p>
                     <p>
-                        <b>Gilles Mattana&nbsp;: </b>
-                        <a href="mailto:quoideneuf@clemovitch.com">quoideneuf@clemovitch.com</a>
+                        <b>Production&nbsp;: </b>
+                        <a href="mailto:gilles@clemovitch.com">gilles@clemovitch.com</a>
                     </p>
                 </div>
             </section>
