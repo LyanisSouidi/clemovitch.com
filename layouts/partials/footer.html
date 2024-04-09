@@ -1,0 +1,44 @@
+<footer class="bg-black p-6 text-sm">
+    <ul class="mb-4 list-none text-center">
+        <li class="inline-block">
+            <a class="hover:cursor-pointer" onClick="document.querySelector('dialog#credits').showModal();">Crédits</a>
+        </li>
+    </ul>
+    <p class="text-center text-sm">© Tous droits réservés</p>
+
+    <dialog id="credits" class="min-w-full bg-[#d50d3d] text-white sm:min-w-[600px]">
+        <div class="relative px-12 py-5">
+            <button
+                class="absolute right-4 top-4"
+                autofocus
+                onClick="document.querySelector('dialog#credits').close();">
+                <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" width="28" height="28">
+                    <path d="m2 23.2l21.2-21.2 3.5 3.5-21.2 21.2zm3.6-21.9l21.2 21.2-3.6 3.6-21.2-21.3z" />
+                </svg>
+            </button>
+            <h2 class="text-4xl uppercase">Crédits</h2>
+            <div class="my-8 flex flex-col gap-2">
+                <div class="flex w-full flex-nowrap gap-4 text-nowrap">
+                    <span class="content-center font-semibold">Management</span>
+                    <span class="w-full border-b border-stone-300"></span>
+                    <span class="text-sm">Gilles Mattana</span>
+                </div>
+                <div class="flex w-full flex-nowrap gap-4 text-nowrap">
+                    <span class="content-center font-semibold">Photographies</span>
+                    <span class="w-full border-b border-stone-300"></span>
+                    <a class="text-sm" href="https://www.sarahjocteur.com/" target="_blank">Sarah Jocteur</a>
+                </div>
+                <div class="flex w-full flex-nowrap gap-4 text-nowrap">
+                    <span class="content-center font-semibold">Développement</span>
+                    <span class="w-full border-b border-stone-300"></span>
+                    <a class="text-sm" href="https://lyanis.sh/" target="_blank">Lyanis Souidi</a>
+                </div>
+                <div class="flex w-full flex-nowrap gap-4 text-nowrap">
+                    <span class="content-center font-semibold">Design</span>
+                    <span class="w-full border-b border-stone-300"></span>
+                    <span class="text-sm">Thomas Balland</span>
+                </div>
+            </div>
+        </div>
+    </dialog>
+</footer>

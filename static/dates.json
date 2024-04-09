@@ -1,0 +1,94 @@
+{
+    "dates": [
+        {
+            "datetime": "2024-03-22T20:00",
+            "location": {
+                "city": "Nancy",
+                "details": "",
+                "link": "https://maps.app.goo.gl/rSfhpF85utqmFy3T6"
+            },
+            "full": false,
+            "link": "https://indiv.themisweb.fr/0459/fChoixSeanceWidget.aspx?idstructure=0459&EventId=714&request=QcE+w0WHSuB9P3ANSYofBbb6Sm1cUJptIZ8cO8mZyAA9qLMl4a4autZrFK3md1ArTPQmgBVeMG0Dz+VrsWNBwQ==&yymm=202403"
+        },
+        {
+            "datetime": "2024-03-24T19:00",
+            "location": {
+                "city": "Paris",
+                "details": "Théâtre LEPIC",
+                "link": "https://maps.app.goo.gl/8wKmShPuR3fjpyGy5"
+            },
+            "full": true,
+            "link": "https://www.vostickets.fr/Billet/FR/representation-THEATRE_LEPIC-25222-0.wb"
+        },
+        {
+            "datetime": "2024-03-25T19:00",
+            "location": {
+                "city": "Paris",
+                "details": "Théâtre LEPIC",
+                "link": "https://maps.app.goo.gl/8wKmShPuR3fjpyGy5"
+            },
+            "full": true,
+            "link": "https://www.vostickets.fr/Billet/FR/representation-THEATRE_LEPIC-25222-0.wb"
+        },
+        {
+            "datetime": "2024-03-26T21:00",
+            "location": {
+                "city": "Paris",
+                "details": "Théâtre LEPIC",
+                "link": "https://maps.app.goo.gl/8wKmShPuR3fjpyGy5"
+            },
+            "full": true,
+            "link": "https://www.vostickets.fr/Billet/FR/representation-THEATRE_LEPIC-25222-0.wb"
+        },
+        {
+            "datetime": "2024-03-31T19:00",
+            "location": {
+                "city": "Paris",
+                "details": "Théâtre LEPIC",
+                "link": "https://maps.app.goo.gl/8wKmShPuR3fjpyGy5"
+            },
+            "full": true,
+            "link": "https://www.vostickets.fr/Billet/FR/representation-THEATRE_LEPIC-25222-0.wb"
+        },
+        {
+            "datetime": "2024-04-01T19:00",
+            "location": {
+                "city": "Paris",
+                "details": "Théâtre LEPIC",
+                "link": "https://maps.app.goo.gl/8wKmShPuR3fjpyGy5"
+            },
+            "full": true,
+            "link": "https://www.vostickets.fr/Billet/FR/representation-THEATRE_LEPIC-25222-0.wb"
+        },
+        {
+            "datetime": "2024-04-02T21:00",
+            "location": {
+                "city": "Paris",
+                "details": "Théâtre LEPIC",
+                "link": "https://maps.app.goo.gl/8wKmShPuR3fjpyGy5"
+            },
+            "full": true,
+            "link": "https://www.vostickets.fr/Billet/FR/representation-THEATRE_LEPIC-25222-0.wb"
+        },
+        {
+            "datetime": "2024-04-09T20:15",
+            "location": {
+                "city": "Nantes",
+                "details": "",
+                "link": "https://maps.app.goo.gl/XrTXWsm2rbLGNjfE7"
+            },
+            "full": true,
+            "link": "https://billetterie-theatre100noms.mapado.com/event/292498-clement-viktorovitch-lart-de-ne-pas-dire"
+        },
+        {
+            "datetime": "2024-05-04T20:30",
+            "location": {
+                "city": "Declines - Grand Lyon",
+                "details": "",
+                "link": "https://maps.app.goo.gl/XAxFgFjA1sKCvUB46"
+            },
+            "full": true,
+            "link": "https://toboggan-billetterie.tickandlive.com/reserver/clement-viktorovitch/77727"
+        }
+    ]
+}

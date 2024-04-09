@@ -1,0 +1,42 @@
+{{ $font_deja_vu_sans := resources.Get "font/DejaVuSans.ttf" }}
+{{ $font_gotham_bold := resources.Get "font/GothamBold.otf" }}
+{{ $font_open_sans := resources.Get "font/OpenSans.ttf" }}
+<link rel="stylesheet" href="css/style.css" />
+{{ $img_livre_bg_1 := resources.Get "img/livre-bg-1.png" }}
+<style>
+    * {
+        font-family: 'Open Sans', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Gotham Bold', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    @font-face {
+        font-family: 'DejaVu Sans';
+        font-style: 'Book';
+        src:
+            local('DejaVu Sans'),
+            url('{{ $font_deja_vu_sans.RelPermalink }}') format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Gotham Bold';
+        src:
+            local('Gotham Bold'),
+            url('{{ $font_gotham_bold.RelPermalink }}') format('opentype');
+    }
+
+    @font-face {
+        font-family: 'Open Sans';
+        src:
+            local('Open Sans'),
+            url('{{ $font_open_sans.RelPermalink }}') format('truetype');
+    }
+
+    @media (min-width: 1024px) {
+        section#livre {
+            background-image: url('{{ $img_livre_bg_1.RelPermalink }}');
+        }
+    }
+</style>

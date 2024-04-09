@@ -1,0 +1,28 @@
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta
+        name="description"
+        content="Clément Viktorovitch est docteur en science politique. Il enseigne la rhétorique et la négociation à Sciences Po depuis plus de dix ans. Il a dispensé ses cours à l’ESSEC, l’ENA, l’École de Guerre, l’Université Paris 13. Pédagogue passionné, soucieux de vulgarisation, il s’est fait connaître par ses chroniques dans les médias, où il analyse sans complaisance les discours politiques." />
+    <meta name="theme-color" content="#d40d3d" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://clemovitch.com/" />
+    <meta property="og:title" content="Clément Viktorovitch" />
+    <meta
+        property="og:description"
+        content="Clément Viktorovitch est docteur en science politique. Il enseigne la rhétorique et la négociation à Sciences Po depuis plus de dix ans. Il a dispensé ses cours à l’ESSEC, l’ENA, l’École de Guerre, l’Université Paris 13. Pédagogue passionné, soucieux de vulgarisation, il s’est fait connaître par ses chroniques dans les médias, où il analyse sans complaisance les discours politiques." />
+    {{ $img_clemovitch := resources.Get "img/clemovitch.png" }}
+    <meta property="og:image" content="{{ $img_clemovitch.RelPermalink }}" />
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://clemovitch.com/" />
+    <meta property="twitter:title" content="Clément Viktorovitch" />
+    <meta
+        property="twitter:description"
+        content="Clément Viktorovitch est docteur en science politique. Il enseigne la rhétorique et la négociation à Sciences Po depuis plus de dix ans. Il a dispensé ses cours à l’ESSEC, l’ENA, l’École de Guerre, l’Université Paris 13. Pédagogue passionné, soucieux de vulgarisation, il s’est fait connaître par ses chroniques dans les médias, où il analyse sans complaisance les discours politiques." />
+    <meta property="twitter:image" content="{{ $img_clemovitch.RelPermalink }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    {{ $favicon := resources.Get "favicon.ico" }}
+    <link rel="icon" type="image/x-icon" href="{{ $favicon.RelPermalink }}" />
+    {{ partial "css" . }}
+</head>
