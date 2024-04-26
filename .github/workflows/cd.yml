@@ -37,4 +37,3 @@ jobs:
                   local_path: './public/*'
                   remote_path: ${{ secrets.DEPLOY_PATH }}
                   delete_remote_files: true
-                  sftp_only: true
